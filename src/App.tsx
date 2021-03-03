@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Rating, RatingValueType} from "./components/UncontrolledRating/Rating";
+import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {OnOff} from './components/OnOff/OnOff';
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
@@ -11,7 +11,6 @@ function App() {
 
     const [ratingValue, setRatingValue] = useState<RatingValueType>(0);
     const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
-
     const [onOffValue, setOnOffValue] = useState<boolean>(false)
 
     return (
@@ -21,25 +20,25 @@ function App() {
             <Accordion titleValue={"Menu"}
                        collapsed={accordionCollapsed}
                        onChange={ () => setAccordionCollapsed(!accordionCollapsed)}/>
-            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
-            {/*<UncontrolledRating />*/}
+            {/*<UncontrolledRating value={ratingValue} onClick={setRatingValue}/>*/}
+            {/*<Rating />*/}
             <UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}
             <UncontrolledAccordion titleValue={"Blabla"}/>
             {/*<OnOff onOffValue={onOffValue} setOnOffValue={setOnOffValue}/>*/}
             {/*<Accordion titleValue={"Users"} collapsed={true} />*/}
-            {/*<Rating value={1}/>*/}
-            {/*<Rating value={2}/>*/}
-            {/*<Rating value={3}/>*/}
-            {/*<Rating value={4}/>*/}
-            {/*<Rating value={5}/>*/}
+            {/*<UncontrolledRating value={1}/>*/}
+            {/*<UncontrolledRating value={2}/>*/}
+            {/*<UncontrolledRating value={3}/>*/}
+            {/*<UncontrolledRating value={4}/>*/}
+            {/*<UncontrolledRating value={5}/>*/}
 
             {/*<UncontrolledAccordion titleValue={"Users"}/>*/}
 
-            {/*<UncontrolledRating />*/}
-            {/*<UncontrolledRating />*/}
-            {/*<UncontrolledRating />*/}
-            {/*<UncontrolledRating />*/}
-            {/*<UncontrolledRating />*/}
+            {/*<Rating />*/}
+            {/*<Rating />*/}
+            {/*<Rating />*/}
+            {/*<Rating />*/}
+            {/*<Rating />*/}
         </div>
     );
 }
