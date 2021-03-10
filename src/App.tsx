@@ -19,11 +19,12 @@ function App() {
             {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
             <Accordion titleValue={"Menu"}
                        collapsed={accordionCollapsed}
-                       onChange={ () => setAccordionCollapsed(!accordionCollapsed)}/>
+                       onChange={() => setAccordionCollapsed(!accordionCollapsed)}
+                       items={[]}/>
             {/*<UncontrolledRating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<Rating />*/}
-            <UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}
-            <UncontrolledAccordion titleValue={"Blabla"}/>
+            {/*<UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}*/}
+            {/*<UncontrolledAccordion titleValue={"Blabla"}/>*/}
             {/*<OnOff onOffValue={onOffValue} setOnOffValue={setOnOffValue}/>*/}
             {/*<Accordion titleValue={"Users"} collapsed={true} />*/}
             {/*<UncontrolledRating value={1}/>*/}
@@ -47,10 +48,10 @@ type PageTitlePropsType = {
     title: string
 }
 
-function PageTitle (props: PageTitlePropsType) {
+function PageTitle(props: PageTitlePropsType) {
     console.log("PageTitle rendering")
     return (
-        <h1>{ props.title }</h1>
+        <h1>{props.title}</h1>
     )
 }
 
