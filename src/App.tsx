@@ -20,7 +20,12 @@ function App() {
             <Accordion titleValue={"Menu"}
                        collapsed={accordionCollapsed}
                        onChange={() => setAccordionCollapsed(!accordionCollapsed)}
-                       items={[]}/>
+                       items={[
+                           {title: "Igor", value: 1},
+                           {title: "Petr", value: 8},
+                           {title: "Ivan", value: 3}
+                       ]}
+                       onClick={() => alert("hello")}/>
             {/*<UncontrolledRating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<Rating />*/}
             {/*<UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}*/}
