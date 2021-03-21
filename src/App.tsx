@@ -5,6 +5,7 @@ import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {OnOff} from './components/OnOff/OnOff';
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {Select} from "./components/Select/Select";
 
 function App() {
     console.log("App rendering");
@@ -25,7 +26,11 @@ function App() {
                            {title: "Petr", value: 8},
                            {title: "Ivan", value: 3}
                        ]}
-                       onClick={() => alert("hello")}/>
+                       onClick={() => alert("hello")}
+                       color={""}
+
+            />
+
             {/*<UncontrolledRating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<Rating />*/}
             {/*<UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}*/}
