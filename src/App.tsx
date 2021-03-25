@@ -18,18 +18,20 @@ function App() {
         <div className={"app"}>
             {/*<Accordion titleValue={"Menu"} collapsed={true} />*/}
             {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
-            <Accordion titleValue={"Menu"}
-                       collapsed={accordionCollapsed}
-                       onChange={() => setAccordionCollapsed(!accordionCollapsed)}
-                       items={[
-                           {title: "Igor", value: 1},
-                           {title: "Petr", value: 8},
-                           {title: "Ivan", value: 3}
-                       ]}
-                       onClick={() => alert("hello")}
-                       color={""}
 
-            />
+
+            {/*<Accordion titleValue={"Menu"}*/}
+            {/*           collapsed={accordionCollapsed}*/}
+            {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}*/}
+            {/*           items={[*/}
+            {/*               {title: "Igor", value: 1},*/}
+            {/*               {title: "Petr", value: 8},*/}
+            {/*               {title: "Ivan", value: 3}*/}
+            {/*           ]}*/}
+            {/*           onClick={() => alert("hello")}*/}
+            {/*           color={""}*/}
+
+            {/*/>*/}
 
             {/*<UncontrolledRating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<Rating />*/}
